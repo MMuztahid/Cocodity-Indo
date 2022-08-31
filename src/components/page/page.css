@@ -1,0 +1,70 @@
+.main-content {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 100px 0 0 0;
+    align-items: center;
+    text-align: center;
+}
+
+.top-content {
+    position: relative;
+    display: block;
+    top: -100px;
+    height: 100vh;
+    background-image: url('../../media/foto1.webp');
+    background-repeat: no-repeat;
+}
+
+.background-text {
+    color: aqua;
+    position: relative;
+    display: block;
+    justify-content: center;
+    top: 40%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.6rem;
+}
+h1 {
+    margin-bottom: 100px;
+}
+
+.row {
+    display: flex;
+    padding: 80px;
+}
+  
+.column {
+    flex: 50%;
+    padding: 0 10px;
+}
+.row-feature {
+    padding: 0 80px;
+}
+.column-feature {
+    float: left;
+    width: 35%;
+    padding: 0 80px;
+}
+  
+/* Clear floats after the columns */
+.row-feature:after {
+    content: "";
+    display: table;
+    clear: both;
+    justify-content: center;
+}
+@media screen and (max-width: 900px) {
+    .column-feature  {
+        width: 50%;
+    }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column-feature  {
+        width: 100%;
+    }
+}
+
