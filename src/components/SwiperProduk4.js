@@ -46,8 +46,7 @@ function SwiperProduk4() {
                 People also often use coconut fiber as a growing medium, especially in the hydroponic industry. Thus, the coconut 
                 fiber market does not only go to factories, but also to household or retail consumers.
             </p>
-            
-          </Container>
+           </Container>
         </SwiperSlide>
       </Swiper>
     </>

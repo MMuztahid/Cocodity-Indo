@@ -11,7 +11,6 @@ import "./component.css";
 
 // import required modules
 import { Container } from "@mui/material";
-
 import { Pagination, Navigation } from "swiper";
 
 function SwiperProduk2() {

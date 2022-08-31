@@ -6,6 +6,7 @@ const Feature = () => {
     return(
         <div className="main-content">
             <h1>Our KeyFeatures</h1>
+            
             <div className="row-feature">
                 {keyFeatures}
             </div>
