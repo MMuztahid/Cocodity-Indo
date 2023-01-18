@@ -11,7 +11,7 @@ import "./component.css";
 
 // import required modules
 
-import { Container, Typography } from '@mui/material';
+import { Container, Typography, Stack } from '@mui/material';
 import { Pagination, Navigation } from "swiper";
 
 function SwiperProduk1() {
@@ -34,20 +34,35 @@ function SwiperProduk1() {
               display: 'block',
               alignItems: 'center',
             }}>
-              Coconut fiber is processed coir from coconut skin which has many benefits and can be used in various industries. 
-              It has a high lignin content and low cellulose content, which makes it ductile, strong, and very durable. Coconut 
-              fiber has a lightness that is exceptional due to the voids arising from drying sieve cells. Therefore, it can be 
-              used as a raw material for products, such as ropes, doormats, brooms, car seats, and others. The demand for coconut 
-              fiber increases each year because of its benefits, quality, and affordable price. Indonesia itself has become the 
-              largest coconut producer in the world.
+              Activated carbon or activated charcoal is generally made from coal and biomass, which contain large levels of carbon 
+              elements. “Pure Carbon” activated charcoal uses coconut shell biomass as the basic ingredient. Coconut shell is the 
+              best biomass base material because of its large carbon element, high hardness level and it is an organic material, 
+              so it can be used for food-grade function classification, medicines, and cosmetics.
             </Typography>
           </Container>
         </SwiperSlide>
         <SwiperSlide>
           <Container maxWidth='md'>
-            Coconut fiber is also useful in irrigation systems because it has good quality as a barrier to retaining water. 
-            People also often use coconut fiber as a growing medium, especially in the hydroponic industry. Thus, the coconut 
-            fiber market does not only go to factories, but also to household or retail consumers.
+            <Stack direction="row" spacing="2">
+            <Container>
+              <ul>
+                <p>Granular activated carbon application:</p>
+                <li>Ground or drinking water filter <span>water treatment</span></li>
+                <li>Seawater reverse osmosis filter</li>
+                <li>Aquarium filter</li>
+                <li>Toxic absorption in wastewater treatment</li>
+                <li>Deodorizing</li>
+                <li>Air filter</li>
+              </ul>
+            </Container>
+            <Container>
+              <ul>
+                <p>Powder-activated carbon application:</p>
+                <li>Seawater reverse osmosis filter</li>
+                <li>Precious metal mining cleaning media</li>
+              </ul>
+            </Container>
+            </Stack>
           </Container>
         </SwiperSlide>
       </Swiper>

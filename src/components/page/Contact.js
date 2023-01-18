@@ -10,6 +10,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Contact = () => {
     return(
         <div className="main-content">
+            <Divider variant="middle" sx={{
+                marginBottom: '50px',
+                background: '#28282b',
+            }}/>
             <h1>Contact</h1>
             <Container maxWidth="md">
                 <EmailForm/>
@@ -19,6 +23,10 @@ const Contact = () => {
                 marginBottom: '100px',
             }}/>
             <FP/>
+            <Divider variant="middle" sx={{
+                marginTop: '100px',
+                marginBottom: '100px',
+            }}/>
             <div className="row">
                 <div className="column">
                     <h4>Address</h4>

@@ -43,7 +43,7 @@ class BottomBar extends React.Component{
                         color: 'white',
                     }}>arengasugarindo@gmail.com </Typography>
                     <Typography variant="body2" sx={{ color: 'white',}}>info@arengasugarindo.com</Typography>
-                    <Typography variant="body2" sx={{ color: 'white',}}>Whatsapp : +62 812 8826 084</Typography>
+                    <Typography variant="body2" sx={{ color: 'white',}}>Whatsapp : +62 812 8826 2036</Typography>
             </Container>
             <Container  sx={{
                 width: {xs: 'xs', sm: 'xs', md: '30%'},
@@ -68,7 +68,7 @@ class BottomBar extends React.Component{
             </Container>
             
            </Stack>
-           <Typography variant="body2" sx={{marginTop: '50px', color: 'white'}}>© 2022 Arenga Sugar Indo. All rights reserved</Typography>
+           <Typography variant="body2" sx={{marginTop: {xs:'10xp',sm:'20px',md: '50px'},left:{xs:'5%',sm:'5%',md:'10%'}, color: 'white'}}>© 2022 Arenga Sugar Indo. All rights reserved</Typography>
         </div>
     );
 }

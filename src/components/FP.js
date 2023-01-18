@@ -9,14 +9,14 @@ import FP3 from '../media/foto20.webp';
 export const FP = (props) => {
     return (
     
-        <Container maxWidth="xl"sx={{
+        <Container maxWidth="lg"sx={{
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         alignItems: 'center'
         }}>
             <Container sx={{
-            width: '250px',
+            width: '300px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',

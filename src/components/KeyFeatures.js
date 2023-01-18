@@ -8,7 +8,7 @@ export const KeyFeatures = [
     {
         img: Logo,
         title: "Integrity",
-        content: "Our goal is to be a sustainable company, to prosper, and increase the value of Indonesian farmers with agricultural products by bringing products from our best local coconut derivatives to the international market.",
+        content: "Committed to always cherishing our quality for integrity, by treating others with honesty, fairness, and respect, and will not take this compromised.",
     },
     {
         img: Logo1,

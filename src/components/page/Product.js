@@ -19,11 +19,15 @@ import Gambar11 from "../../media/foto17.webp";
 
 
 import './page.css';
-import { Container, Stack } from "@mui/material";
+import { Container, Divider, Stack } from "@mui/material";
 
 const Product = () => {
     return(
         <div className="main-content">
+            <Divider variant="middle" sx={{
+                marginBottom: '50px',
+                background: '#28282b',
+            }}/>
             <h1>Product</h1>
             <Container maxWidth='xl'>
             <div className="row">
@@ -35,7 +39,7 @@ const Product = () => {
                     </Stack>
                 </div>
                 <div className="column">
-                    <h4>Activated Coconut Charcoal</h4>
+                    <h3>Activated Coconut Charcoal</h3>
                     <div className="row">
                     <ul>
                         <p>Granular activated carbon (GAC):</p>
@@ -84,7 +88,7 @@ const Product = () => {
                     </Stack>
                 </div>
                 <div className="column">
-                    <h4>Liquid Smoke Coconut Vinegar</h4>
+                    <h3>Liquid Smoke Coconut Vinegar</h3>
                     <ul>
                         <div className="row">
                             <p>
@@ -119,24 +123,41 @@ const Product = () => {
             <div><SwiperProduk2/></div>
             <div className="row">
                 <div className="column">
-                    <Stack spacing={2}>
+                    <Stack direction="row" spacing={2}>
                         <img src={Gambar7} alt="" width="300px"/>
                         <img src={Gambar8} alt="" width="300px"/>
                     </Stack>
                 </div>
                 <div className="column">
-                    <h4>Cocopeat/Cocopith</h4>
+                    <h3>Cocopeat/Cocopith</h3>
                     
-                        <Stack spacing={2} sx={{marginTop: '60px'}}>
+                        <Stack spacing={2} sx={{marginTop: '30px'}}>
                             <p>Specification</p>
-                            <li>Ph = 5 - 7 </li>
-                            <li>Color = Gold Brown</li>
-                            <li>Impurity = less than 7%</li>
-                            <li>Water content = 30%-50%</li>
-                            <li>Packaging = 40Kgs / bag</li>
+                            <Container maxWidth="md" sx={{
+                                position:'relative',
+                                textAlign:'left',
+                                left: '20%',
+                                marginTop: '10px',
+                                
+                            }}>
+                                <li>Available = Low EC and High EC</li>
+                                <li>Ph = 5 - 7 </li>
+                                <li>Color = Gold Brown</li>
+                                <li>Impurity = less than 7%</li>
+                                <li>Water content = 30%-50%</li>
+                                <li>Packaging = 40Kgs / bag</li>
+                            </Container>
                             <p>Quantity</p>
-                            <li>20ft = +-224 Bags / 6930Kgs </li>
-	                        <li>40ft = +-476 Bags / 19.040Kgs </li>
+                            <Container maxWidth="md" sx={{
+                                position:'relative',
+                                textAlign:'left',
+                                left: '20%',
+                                marginTop: '10px',
+                            }}>
+                                <li>20ft = +-224 Bags / 6930Kgs </li>
+	                            <li>40ft = +-476 Bags / 19.040Kgs </li>
+                            </Container>
+                            
                         </Stack>
                     
                 </div>
@@ -144,35 +165,51 @@ const Product = () => {
             <div><SwiperProduk3/></div>
             <div className="row">
                 <div className="column">
-                    <Stack spacing={2}>
-                        <img src={Gambar9} alt="" width="300px"/>
-                        <img src={Gambar10} alt="" width="300px"/>
+                    <Stack direction="row" spacing={4}>
+                        <img src={Gambar9} alt="" height="300px"/>
+                        <img src={Gambar10} alt="" height="300px"/>
                     </Stack>
                 </div>
                 <div className="column">
-                    <h4>CocoFiber</h4>
-                    <p>Specification</p>
-                    <ul>
-                        <li>Block size (Bale) = 45 x 50 x 100</li> 
-                        <li>Block weight (Bale) = 55Kgs</li>
-                        <li>Color = Gold Brown / Light Brown</li>
-                        <li>Impurity = less than 5%</li>
-                        <li>Water content = 18% - 25% </li>
-                        <li>Fiber’s length = 5 - 30cm (80% more than 20cm)</li>
+                    <Stack spacing={2}>
+                        <h3>CocoFiber</h3>
+                        <p>Specification</p>
+                        <Container maxWidth="md" sx={{
+                            position:'relative',
+                            textAlign:'left',
+                            left: '20%',
+                            marginTop: '10px',
+                        }}>
+                            <li>Block size (Bale) = 45 x 50 x 100</li> 
+                            <li>Block weight (Bale) = 55Kgs</li>
+                            <li>Color = Gold Brown / Light Brown</li>
+                            <li>Impurity = less than 5%</li>
+                            <li>Water content = 18% - 25% </li>
+                            <li>Fiber’s length = 5 - 30cm (80% more than 20cm)</li>
+                        </Container>
                         <p>Quantity :</p>
-                        <li>20ft = +- 126 Bales / 8960Kgs</li>
-                        <li>40ft = +- 240 Bales / 13.200Kgs</li>
-                    </ul>
+                        <Container maxWidth="md" sx={{
+                            position:'relative',
+                            textAlign:'left',
+                            left: '20%',
+                            marginTop: '10px',
+                        }}>
+                            <li>20ft = +- 126 Bales / 8960Kgs</li>
+                            <li>40ft = +- 240 Bales / 13.200Kgs</li>
+                        </Container>
+                    
+                    </Stack>
                 </div>
             </div>
             <div><SwiperProduk4/></div>
             <div className="row">
                 <div className="column">
-                    <img src={Gambar11} alt="" width="300px"/>
+                    <h3>Coconut Shell Charcoal</h3>
+                    <Container maxWidth="md" sx={{marginTop: '20px'}}>
+                        <img src={Gambar11} alt="" width="300px"/>
+                    </Container>
                 </div>
-                <div className="column">
-                    <h4>Coconut Shell Charcoal</h4>
-                </div>
+                
             </div>
         </div>
     );

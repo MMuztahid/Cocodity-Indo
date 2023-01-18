@@ -12,6 +12,15 @@
   padding-top: 32px;
   background: #28282b;
 }
+
+@media screen and (max-width: 800px) {
+  .bottom-bar{
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  
+  .bottom-bar{
+    height: fit-content;
+  }
 }
