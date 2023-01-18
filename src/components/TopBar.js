@@ -5,21 +5,18 @@ import './TopBar.css';
 import Logo from '../media/LOGO.webp';
 
 function HideOnScroll(props) {
-    const { children, window } = props;
-    
-    // Note that you normally won't need to set the window ref as useScrollTrigger
-    // will default to window.
-    // This is only being set here because the demo is in an iframe.
-    const trigger = useScrollTrigger({
-      target: window ? window() : undefined,
-    });
+  const { children, window } = props;
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+  });
   
-    return (
-      <Slide appear={false} direction="down" in={!trigger}>
-        {children}
-      </Slide>
-    );
-    };
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+};
+
 
 const TopBar = () => {
   const [clicked, setClicked] = useState(false);
@@ -30,17 +27,18 @@ const TopBar = () => {
   return (
     <HideOnScroll>
       <nav>
-        <ul className='button-menu'>
+      <img src={Logo} alt="Cocodity Indonesia" className='logo-responsive'/>
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={clicked ? "fa fa-times" :"fa fa-bars"}></i>
+          </div> 
+        <ul className={clicked? 'button-menu' : 'button-menu close'}>
           <li>
             <Link activeClass="active" to="About" spy={true} smooth={true} offset={0} duration={100}>About</Link>
           </li>
           <li>
             <Link activeClass="active" to="Feature" spy={true} smooth={true} offset={0} duration={100}>Feature</Link>
           </li>
-          <img src={Logo} alt="Cocodity Indonesia" className='logo'/>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={clicked ? "fa fa-times" :"fa fa-bars"}></i>
-          </div>                
+          <img src={Logo} alt="Cocodity Indonesia" className='logo'/>               
           <li>
             <Link activeClass="active" to="Product" spy={true} smooth={true} offset={0} duration={100}>Product</Link>
           </li>

@@ -21,14 +21,15 @@ function EmailForm () {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
+        <Container maxWidth='xl'>
         <Stack direction={{xs: "column", sm: "column" ,md: "row"}} spacing={2}>
             <Container sx={{
                 display: 'flex',
-                flexDirection: 'row',
+                flexDirection: {xs: 'column',sm: 'column', md:'row'},
                 marginLeft: 'auto',
                 marginRight: 'auto',
             }}>
-                <Container sx={{
+                <Container  sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 }}>
@@ -37,17 +38,24 @@ function EmailForm () {
                     <label>Email</label>
                     <input type="email" name="user_email"/>
                 </Container>
-            </Container>
-            <Container sx={{
-            display: 'flex',
-            flexDirection: 'column'
-            }}>
-                <label>Message</label>
-                <textarea name="message" style={{ height:"95px" }}/>
+                <Container sx={{
+                    display: 'flex',
+                    flexDirection: 'column'
+                }}>
+                    <label>Message</label>
+                    <textarea name="message"/>
+                </Container>
             </Container>
         </Stack>
-        <input type="submit" value="Send" />
-        
+        <Container sx={{
+                display: 'flex',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                justifyContent: 'center',
+            }}>
+            <input type="submit" value="Send" />   
+        </Container>  
+        </Container>   
     </form>
   );
 }

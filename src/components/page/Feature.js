@@ -10,7 +10,7 @@ const Feature = () => {
                 marginBottom: '50px',
                 background: '#28282b',
             }}/>
-            <h1>Our KeyFeatures</h1>
+            <h1>Our Key Features</h1>
             
             <div className="row-feature">
                 {keyFeatures}

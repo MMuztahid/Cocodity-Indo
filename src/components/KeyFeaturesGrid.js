@@ -5,12 +5,13 @@ import { Container } from "@mui/material";
 export const keyFeatures = KeyFeatures.map(({ img, title, content },index) => {
     return (
         <div className="column-feature" key={index}>
-            <Container maxWidth="md" sx={{
-                height: '300px',
+            <Container sx={{
+                width: {xs:'xl',sm:'lg',md:'lg'},
+                height: {xs:'400px',sm: '400px',md: '300px',}
             }}>
                 <img src={img} alt={title} width="100px" height="100px"/>
                 <h2>{title}</h2>
-                <Container maxWidth="md" sx={{marginTop: '20px',}}>
+                <Container  sx={{ width: {xs: 'xl',sm: 'xl', md: 'md' },marginTop: '20px',}}>
                     <p>{content}</p>
                 </Container>
             </Container>

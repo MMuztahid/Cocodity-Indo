@@ -11,16 +11,17 @@ export const FP = (props) => {
     
         <Container maxWidth="lg"sx={{
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: {xs: 'column', sm: 'column',md: 'row'},
         justifyContent: 'space-evenly',
-        alignItems: 'center'
+        alignItems: 'center',
         }}>
             <Container sx={{
             width: '300px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            marginBottom: {xs: '50px', sm: '50px', md: '0' },
             }}>
                 <img src={FP1} alt="Founder Arenga Sugar Indo" width={'200px'} height={'200px'}/>
                 <Typography variant="h6" sx={{
@@ -50,7 +51,8 @@ export const FP = (props) => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            marginBottom: {xs: '50px', sm: '50px', md: '0' },
             }}>
                 <img src={FP2} alt="Co-Founder Arenga Sugar Indo" width={'200px'} height={'200px'}/>
                 <Typography variant="h6" sx={{
@@ -80,9 +82,9 @@ export const FP = (props) => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
             }}>
-                <img src={FP3} alt="General Manager Arenga Sugar Indo" width={'250px'} height={'220px'}/>
+                <img src={FP3} alt="General Manager Arenga Sugar Indo" width={'200px'} height={'200px'}/>
                 <Typography variant="h6" sx={{
                 fontFamily: `Calibri`,
                 marginTop: '40px',
@@ -100,9 +102,8 @@ export const FP = (props) => {
                     <Link href="https://www.instagram.com/gevinernawan/" target="blank" display={'inline'}>
                         <InstagramIcon sx={{color: 'black', marginRight: '10px'}}/>
                     </Link> 
-                    <Link href="" target="blank" display={'inline'}>
-                        <LinkedInIcon sx={{color: 'black'}}/>
-                    </Link> 
+                    <LinkedInIcon sx={{color: 'black',display:'inline'}}/>
+                    
                 </Container>
             </Container>
             </Container>

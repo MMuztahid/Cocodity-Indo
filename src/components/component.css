@@ -6,7 +6,8 @@
 .swiper-slide {
   text-align: justify;
   font-size: 18px;
-  background: #fff;
+  color: white;
+  background: none;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -35,8 +36,35 @@
 }
 
 span::before{
-  content: "(";
+  content: "";
 }
 span::after {
-  content: ")";
+  content: "";
+}
+
+.scrollTop {
+  position: fixed; 
+  width: 100%;
+  bottom: 20px;
+  height: 20px;
+
+  z-index: 1;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .swiper {
+    height: 500px;
+  }
+  .swiper-slide {
+    font-size: 16px;
+  }
+  
 }

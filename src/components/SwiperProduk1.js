@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import "./component.css";
 
@@ -22,14 +22,14 @@ function SwiperProduk1() {
         spaceBetween={30}
         loop={true}
         pagination={{
-          clickable: true,
+          dynamicBullets: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[ Pagination, Navigation]}
         className="swiper-product"
       >
         <SwiperSlide>
-          <Container maxWidth='md'>
+          <Container sx={{width:{xs: '70%', sm:'70%', md: '80%'} }}>
             <Typography variant="body1" gutterBottom sx={{
               display: 'block',
               alignItems: 'center',
@@ -42,12 +42,12 @@ function SwiperProduk1() {
           </Container>
         </SwiperSlide>
         <SwiperSlide>
-          <Container maxWidth='md'>
-            <Stack direction="row" spacing="2">
+          <Container sx={{width:{xs: '70%', sm:'70%', md: '80%'} }}>
+            <Stack direction={{xs:'column',sm: 'column', md: "row"}} spacing={2}>
             <Container>
               <ul>
-                <p>Granular activated carbon application:</p>
-                <li>Ground or drinking water filter <span>water treatment</span></li>
+                <p><b>Granular Activated Carbon application:</b></p>
+                <li>Ground or drinking water filter (water treatment)</li>
                 <li>Seawater reverse osmosis filter</li>
                 <li>Aquarium filter</li>
                 <li>Toxic absorption in wastewater treatment</li>
@@ -57,7 +57,7 @@ function SwiperProduk1() {
             </Container>
             <Container>
               <ul>
-                <p>Powder-activated carbon application:</p>
+                <p><b>Powder Activated Carbon application:</b></p>
                 <li>Seawater reverse osmosis filter</li>
                 <li>Precious metal mining cleaning media</li>
               </ul>

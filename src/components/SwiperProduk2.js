@@ -21,14 +21,14 @@ function SwiperProduk2() {
         spaceBetween={30}
         loop={true}
         pagination={{
-          clickable: true,
+          dynamicBullets: true,
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="swiper-product"
       >
         <SwiperSlide>
-          <Container maxWidth='md'>
+          <Container sx={{width:{xs: '70%', sm:'70%', md: '80%'} }}>
             <ul>
               <p>
                 Our liquid smoke consists of 3 types based on the amounts of harmful compounds in the liquid smoke, thus affecting the 
@@ -42,9 +42,9 @@ function SwiperProduk2() {
           </Container>
         </SwiperSlide>
         <SwiperSlide>
-          <Container maxWidth='md'>
+          <Container sx={{width:{xs: '70%', sm:'70%', md: '80%'} }}>
             <ul>
-              <p>In general, the components of liquid smoke consist of:</p>
+              <p><b>In general, the components of liquid smoke consist of:</b></p>
               <li>Phenol compounds: As an antioxidant that can extend the shelf life of smoked products.</li>
               <li>Carbonyl compounds: As a coloring and taste of smoked products, that has a distinctive aroma like caramel.</li>
               <li>Acid compounds: As an antibacterial and flavor enhancer for smoked products. These acidic compounds include acetic, propionic, butyric, and valeric acid.</li>

@@ -3,14 +3,77 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
-  <loc>https://cocodity-indo-ca3cf.web.app/</loc>
-  <priority
-  <lastmod>2022-09-02T13:32:40+00:00</lastmod>
+  <loc>https://cocodityindo.com/</loc>
+  <lastmod>2022-09-13T15:43:14+00:00</lastmod>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/LOGO.b2c17e26f598442637f9.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto1.bc2754fce87edae0e096.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto2.1609c3eb3dbca2bfb0b4.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto3.a952a7b30ec75121644b.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto4.b8495661873a7fb72073.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto5.baec976dc10f57394575.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto6.1da58aefc9b80d168d35.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto7.8a88a70ce7184b1aa4cb.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto8.f62e83756a9cde64effd.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto9.725baf89b141591cb7e6.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto10.7788a5ab872a2239890a.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto11.7c0d8d5d7af63c264e54.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto12.e4491d0c5ee03b358487.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto13.e51f31f423c061ef4004.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto14.453663750dbaa43c59cd.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto15.333fea641f5b9e19f828.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto16.7cf12689aef3d0b4ce4a.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto17.909ab959d03c0af9e475.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto18.1e7c054d64b5fd0cbddb.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto19.3dfaa1aaaa46e7f1c0be.webp</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://cocodityindo.com/static/media/foto20.790d61993bb7132712ba.webp</image:loc>
+  </image:image>
 </url>
 
 

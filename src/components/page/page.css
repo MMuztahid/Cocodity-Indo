@@ -1,9 +1,9 @@
 .main-content {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh fit-content;
     margin: 0;
-    padding: 100px 0 0 0;
+    padding: 0;
     align-items: center;
     text-align: center;
 }
@@ -13,15 +13,24 @@
     display: block;
     top: -100px;
     height: 100vh;
+    padding-top: 100px;
     background-image: url('../../media/foto1.webp');
     background-repeat: no-repeat;
 }
 
 .bottom-content {
     text-align: justify;
+    padding-bottom: 80px;
 }
 .bottom-content h2 {
     text-align: center;
+}
+.content {
+    padding: 120px 0 0 0;
+    background: #fff;
+}
+.content :first-child {
+    padding-top: 0px;
 }
 
 .background-text {
@@ -43,6 +52,10 @@ h1 {
     display: flex;
     padding: 80px;
 }
+.row-liquid {
+    display: flex;
+    padding: 40px 0 80px 0;
+}
   
 .column {
     flex: 50%;
@@ -50,11 +63,20 @@ h1 {
 }
 .row-feature {
     padding: 0 80px;
+
 }
 .column-feature {
     float: left;
     width: 35%;
     padding: 0 80px;
+}
+.column-pac {
+    float: left;
+    width: 32%;
+    padding: 0 80px;
+}
+.column-pac h3 {
+    margin-bottom: 50px;
 }
   
 /* Clear floats after the columns */
@@ -62,17 +84,62 @@ h1 {
     content: "";
     display: table;
     clear: both;
-    justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+    .column-feature {
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 0 auto;
+        justify-content: center
+    }
 }
 @media screen and (max-width: 900px) {
+    .row-feature {
+        padding: 0 auto;
+    }
     .column-feature  {
+        width: 80%;
+        margin-bottom: 40px;
+        padding: 0 auto;
+    }
+    
+    .column-pac {
         width: 50%;
     }
+    .background-text {
+        top: 30%;
+    }
+    
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
+    .row-feature {
+        padding: 0 0;
+    }
     .column-feature  {
         width: 100%;
+        margin-bottom: 0;
+        padding: 0 0;
     }
+    .column-pac {
+        width: 70%;
+        padding-bottom: 50px;
+    }
+    .background-text {
+        top: 40%;
+    }
+    .row {
+        display: block;
+        padding: 20px;
+    }
+    .column {
+        width: 100%;
+        padding: 10px;
+    }
+    .row-liquid {
+        display: flex;
+        padding: 40px 0 20px 0;
+    }
+    
 }
 

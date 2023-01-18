@@ -9,16 +9,23 @@
 html{
   scroll-behavior: smooth;
 }
+.App {
+  overflow-x: hidden;
+  
+  background: url('./media/foto2.webp') no-repeat fixed 50%;
+}
 
 
 #About {
   width: 100%;
   min-height: 100%;
+  background: #fff;
   
 }
 #Feature {
   width: 100%;
   min-height: 100vh;
+  background: #fff;
 }
 #Product {
   width: 100%;
@@ -27,6 +34,7 @@ html{
 #Contact {
   width: 100%;
   min-height: 100vh;
+  background: #fff;
 }
 
 
